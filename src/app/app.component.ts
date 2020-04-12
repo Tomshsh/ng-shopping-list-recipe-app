@@ -6,4 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+  loadedFeature: "Shopping List" | "Recipes" = "Recipes"
+
+  onNavigate(feature: "Shopping List"| "Recipes"){
+    this.loadedFeature = feature
+  }
 }
